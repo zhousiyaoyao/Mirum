@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.SpotDao">
+    <select id="querySpot" resultType="com.example.demo.entity.Spot">
+        SELECT id,spot_name,picture_url,longitude,latitude
+        FROM pot
+        ORDER BY id
+    </select>
+
+    <select id="querySpotById" resultType="com.example.demo.entity.Spot">
+        SELECT id,spot_name,picture_url,longitude,latitude
+        FROM pot
+        WHERE
+        id=#{ID}
+    </select>
+
+    <select id="querySpotByName" resultType="com.example.demo.entity.Spot">
+        SELECT id,spot_name,picture_url,longitude,latitude
+        FROM pot
+        WHERE
+        spot_name=#{spotName}
+    </select>
+
+    <insert id="insertSpot" useGeneratedKeys="true" keyProperty="ID"
+            keyColumn="id" parameterType="com.example.demo.entity.Spot">
+        INSERT INTO
+        pot(spot_name,picture_url,longitude,latitude)
+        VALUES
+        (#{spotName},#{pictureUrl},#{longitude},#{latitude})
+    </insert>
+    <update id="updateSpot" parameterType="com.example.demo.entity.Spot">
+        UPDATE pot
+        <set>
+            <if test="spotName!=null">spot_name=#{spotName},</if>
+            <if test="longitude!=null">longitude=#{longitude},</if>
+            <if test="latitude!=null">latitude=#{latitude}</if>
+        </set>
+        WHERE id=#{ID}
+    </update>
+    <delete id="deleteSpot">
+        DELETE FROM
+        pot
+        WHERE
+        id =
+        #{ID}
+    </delete>
+</mapper>
