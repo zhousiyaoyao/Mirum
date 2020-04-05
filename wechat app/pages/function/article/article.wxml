@@ -1,0 +1,38 @@
+<view class="container">
+  <view class="title">{{title}}</view>
+  <view class="owner">{{owner}}</view>
+  <view class="tag">~{{tag}}~</view>
+
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="bindchange" page="{{page}}" current="{{index}}" style='width: 414px; height: 200px'>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+       <image src="{{item}}" data-url="{{item.url}}" class="slide-image"></image> 
+    </swiper-item>
+  </block>
+</swiper>
+
+  <view class="commend">
+    <image src='../../../image/timg1.jpg' style='width: 15px; height: 15px'></image>
+    <p style="font-size: 14px;margin-left: 5px">推荐游玩时长: {{playTime}}</p>
+  </view>
+  <view style='height:1px;width:370px;background-color: #eaeef9;margin-top: 3px'></view>
+  <view class="time">
+    <image src='../../../image/timg2.jpg' style='width: 15px; height: 15px'></image>
+    <p style="font-size: 14px; margin-left: 5px;">{{operateTime}}</p>
+  </view>
+  <view style='height:10px;width:414px;background-color: #eaeef9'></view>
+      <view class="CH-article">
+      <view class="subtitle">
+      <p>关于{{title}}</p>
+      </view>
+      <view class="context">{{context}}</view>
+      </view>
+  <view style='height:10px;width:414px;background-color: #eaeef9'></view>
+      <view class="CH-article">
+      <view class="subtitle">
+      <p>{{enAbout}}</p>
+      </view>
+      <view class="context">{{enContext}}</view>
+      </view>
+</view>

@@ -1,0 +1,16 @@
+{
+  "name": "y",
+  "description": "no",
+  "main": "1",
+  "keywords": [
+    "5697"
+  ],
+  "authors": [
+    "2"
+  ],
+  "license": "21",
+  "homepage": "2",
+  "dependencies": {
+    "zanui-weapp": "^3.0.5"
+  }
+}

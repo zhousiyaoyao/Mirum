@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/function/spot/spot",
+    "pages/function/shopping/shopping",
+    "pages/function/food/food",
+    "pages/function/route/route",
+    "pages/function/spot/spotOption",
+    "pages/function/operation/operation",
+    "pages/function/article/article"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#079df2",
+    "navigationBarTitleText": "旅游地图",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "position": "top",
+    "color": "#000000",
+    "selectedColor": "#369dc6",
+    "list": [{
+      "pagePath": "pages/function/spot/spot",
+      "text" : "景点"
+    },{
+      "pagePath": "pages/function/shopping/shopping",
+      "text": "购物"
+    },
+    {
+      "pagePath": "pages/function/food/food",
+      "text": "餐饮"
+    },{
+      "pagePath": "pages/function/route/route",
+      "text": "路线"
+    }]
+  }
+}

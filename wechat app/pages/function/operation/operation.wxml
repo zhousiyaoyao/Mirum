@@ -1,0 +1,20 @@
+<view class="container">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="row">
+      <text>名称: </text>
+      <input type="text" name="spotName" placeholder='请输入地点名' value='{{spotName}}'></input>
+    </view>
+      <view class="row">
+      <text>经度: </text>
+      <input type="text" name="longitude" placeholder='请输入经度' value='{{longitude}}'></input>
+    </view>
+    <view class="row">
+      <text>纬度: </text>
+      <input type="text" name="latitude" placeholder='请输入纬度' value='{{latitude}}'></input>
+    </view>
+    <view class="row">
+      <button type="primary" form-type='submit'>提交</button>
+      <button type="primary" form-type='reset'>清空</button>
+    </view>
+  </form>
+</view>

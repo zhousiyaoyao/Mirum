@@ -1,0 +1,69 @@
+
+page{
+  
+}
+image{
+  width: 414px;
+  height: 220px;
+}
+
+.container{
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtitle{
+  margin-top:10px;
+  margin-bottom:10px;
+  float: left;
+  width: 370px;
+}
+
+.context{
+  max-width: 370px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.owner{
+  font-size: 16px;
+}
+
+.CH-article{
+  border-width: 1px 1px 1px 1px;
+}
+
+.title{
+  width: 370px;
+  float: left;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.owner{
+  width: 370px;
+  float: left;
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+.tag{
+  color:#3790b8; 
+  margin-top:10px;
+  width: 370px;
+  float: left;
+  font-size: 14px;
+}
+
+.commend{
+  width: 370px;
+  float: left
+}
+
+.time{
+  width: 370px;
+  float: left;
+  max-width: 370px
+}

@@ -1,0 +1,17 @@
+<view class="page" style="background-image: url('../../image/shouye.jpg');height:100%">
+  <view class="header">中国</view>
+  <view class="text">
+  <p>
+  周思尧巨帅周思尧巨帅周思尧巨帅周思尧巨帅周思尧巨帅周思尧巨帅周思尧巨帅周思尧巨帅周思尧巨帅
+  周思尧巨帅周思尧巨帅周思尧巨帅周思尧巨帅周思尧巨帅周思尧巨帅周思尧巨帅周思尧巨帅周思尧巨帅
+  </p>
+  </view>
+  <view class="button_container">
+    <navigator class="button" url='../function/spot/spot' bindtap='switch'>
+      <text>开始探索</text>
+    </navigator>
+    <navigator class="button" url='../function/spot/spotOption' bindtap='switch'>
+      <text>后台管理</text>
+    </navigator>
+  </view>
+</view>
